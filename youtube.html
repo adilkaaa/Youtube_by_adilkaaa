@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <style>
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 8px;
+        }
+
+        @media (max-width: 750px) {
+            .video-grid{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width:1000px) {
+            .video-grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .preview-photo{
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .preview-title{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .preview-channel, .preview-views{
+            font-weight: 500;
+            color: rgb(63, 59, 59);
+            margin-top: 15px;
+            margin-bottom: 0px;
+            font-size: 13px;
+            
+        }
+        .preview-views{
+            margin-top: 6px;
+        }
+        .channel-ava{
+            display: inline-block;
+            /* background-color: aquamarine; */
+            vertical-align: top;
+            height: 100%;
+            margin-right: 4px;
+        }
+        .ava{
+
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 0;
+        }
+        .text{
+            
+            display: inline-block;
+            /* background-color: yellow; */
+            width: 80%;
+        }
+        .image-box{
+            display: block;
+        }
+        
+      
+    </style>
+
+
+    <div class="header">
+        <div class="header-logo">
+            <img src="images/menu.png" alt="" class="youtube-burger">
+            <img src="images/logo.png" alt="" class="youtube-logo"></div>
+        <div class="header-search">
+            <input type="text" class="searchbar" placeholder="Search">
+        </div>
+        <div class="header-icons">
+            <img src="images/add.png" alt="" class="icon">
+            <img src="images/bell.png" alt="" class="icon">
+            <img src="images/profile.png" alt="" class="icon ava1">
+        </div>
+    </div>
+
+    <div class="sidebar">
+        sidebar
+    </div>
+
+    <div class="video-grid">
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/911.jpg" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/sabina.jpeg" alt="ava" class="ava">
+                </div>
+
+                <div class="text">
+                    <p class="preview-title">Mix – Jah Khalib - 911 |  ПРЕМЬЕРА EP "911"</p>
+                    <p class="preview-channel">Jah Khalib, AKHA, HammAli & Navai and more</p>
+                    <p class="preview-views"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="preview">
+            <div class="">
+                <img src="images/mocking.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/nazarbaev.jpeg" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">HTML & CSS Full Course - Beginner to Pro (2022)</p>
+                    <p class="preview-channel">SuperSimpleDev</p>
+                    <p class="preview-views">3M views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/mock.jpg" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/sigma.jpeg" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">My Mix</p>
+                    <p class="preview-channel">Eminem and more</p>
+                    <p class="preview-views"></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/4.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/mock.jpg" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">yes im hot. || speed up playlist by yuna</p>
+                    <p class="preview-channel">Yuna ♡</p>
+                    <p class="preview-views">1.7M views</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/5.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/mocking.webp" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">miguel - sure thing (sped up)</p>
+                    <p class="preview-channel">Gusion</p>
+                    <p class="preview-views">1.1K views</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/6.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/4.webp" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">a classical music for reading, writing and studying ✒️📖☕</p>
+                    <p class="preview-channel">The Dreamers</p>
+                    <p class="preview-views">4.2M views</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/6.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/4.webp" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">a classical music for reading, writing and studying ✒️📖☕</p>
+                    <p class="preview-channel">The Dreamers</p>
+                    <p class="preview-views">4.2M views</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/6.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/4.webp" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">a classical music for reading, writing and studying ✒️📖☕</p>
+                    <p class="preview-channel">The Dreamers</p>
+                    <p class="preview-views">4.2M views</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="preview">
+            <div class="image-box">
+                <img src="images/6.webp" alt="" class="preview-photo">
+            </div>
+
+            <div class="preview-content">
+                <div class="channel-ava">
+                    <img src="images/4.webp" alt="ava" class="ava">
+                </div>
+                <div class="text">
+                    <p class="preview-title">a classical music for reading, writing and studying ✒️📖☕</p>
+                    <p class="preview-channel">The Dreamers</p>
+                    <p class="preview-views">4.2M views</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+<!-- position: relative absolute  absolute inside relative -->
+    </div>
+
+
+</body>
+</html>
